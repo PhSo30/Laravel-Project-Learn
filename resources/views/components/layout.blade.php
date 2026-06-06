@@ -38,10 +38,9 @@
                         <li><a>Settings</a></li>
 
                         <li>
-                            <form method="post" action="{{route('logout')}}">
-                                @csrf
-                                <button type="submit">Logout</button>
-                            </form>
+                            <a onclick="document.getElementById('logout-form').submit()">
+                                Logout
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -85,3 +84,8 @@
 </body>
 
 </html>
+
+<form method="post" action="{{route('logout')}}" id="logout-form">
+    @csrf
+    <button type="submit">Logout</button>
+</form>

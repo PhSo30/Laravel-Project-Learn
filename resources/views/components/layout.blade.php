@@ -81,11 +81,9 @@
             <a class="link link-hover">Cookie policy</a>
         </nav>
     </footer>
+    <form method="post" action="{{route('logout')}}" id="logout-form" class="hidden">
+        @csrf
+    </form>
 </body>
 
 </html>
-
-<form method="post" action="{{route('logout')}}" id="logout-form">
-    @csrf
-    <button type="submit">Logout</button>
-</form>

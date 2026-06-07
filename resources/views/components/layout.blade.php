@@ -19,7 +19,7 @@
         </div>
         @auth
             <div class="flex gap-2">
-                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                {{-- <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" /> --}}
                 <div class="dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                         <div class="w-10 rounded-full">

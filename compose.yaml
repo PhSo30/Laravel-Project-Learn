@@ -31,7 +31,7 @@ services:
 
   mysql-service:
     image: mysql:8.0
-    container_name: mysql-container
+    container_name: mysql-learn-container
     environment:
       MYSQL_DATABASE: LaravelProjectLearn
       MYSQL_USER: laravel_user
@@ -43,7 +43,7 @@ services:
       
   phpmyadmin:
     image: phpmyadmin:5.2.2
-    container_name: phpmyadmin-container
+    container_name: phpmyadmin-learn-container
     depends_on:
       - mysql-service
     environment:
